@@ -1,10 +1,6 @@
-Para adicionar dados em suas tabelas, você pode utilizar o comando `INSERT INTO` do MySQL. Vou fornecer um exemplo com vinte valores para cada uma das tabelas que você criou (`Sinfonias`, `Orquestra`, `Integrante`, `Instrumento` e `Atuação na orquestra`). Os dados a seguir são fictícios e podem ser ajustados conforme necessário.
 
-### Inserindo Valores nas Tabelas
+'Sinfonias`
 
-#### 1. Inserindo dados na tabela `Sinfonias`
-
-```sql
 INSERT INTO `mydb`.`Sinfonias` (nome, compositor, data_de_criacao) VALUES 
 ('Sinfonia nº 1', 'Compositor A', '2000-01-01'),
 ('Sinfonia nº 2', 'Compositor B', '2001-02-02'),
@@ -26,11 +22,11 @@ INSERT INTO `mydb`.`Sinfonias` (nome, compositor, data_de_criacao) VALUES
 ('Sinfonia nº 18', 'Compositor R', '2017-06-18'),
 ('Sinfonia nº 19', 'Compositor S', '2018-07-19'),
 ('Sinfonia nº 20', 'Compositor T', '2019-08-20');
-```
 
-#### 2. Inserindo dados na tabela `Orquestra`
 
-```sql
+`Orquestra`
+
+
 INSERT INTO `mydb`.`Orquestra` (nome, cidade, pais, data_de_criacao, sinfonia_apresenta) VALUES 
 ('Orquestra A', 'Cidade A', 'País A', '2000-01-01', 1),
 ('Orquestra B', 'Cidade B', 'País B', '2001-02-02', 2),
@@ -52,11 +48,10 @@ INSERT INTO `mydb`.`Orquestra` (nome, cidade, pais, data_de_criacao, sinfonia_ap
 ('Orquestra R', 'Cidade R', 'País R', '2017-06-18', 18),
 ('Orquestra S', 'Cidade S', 'País S', '2018-07-19', 19),
 ('Orquestra T', 'Cidade T', 'País T', '2019-08-20', 20);
-```
 
-#### 3. Inserindo dados na tabela `Integrante`
 
-```sql
+`Integrante`
+
 INSERT INTO `mydb`.`Integrante` (nome, identidade, nacionalidade, data_de_nascimento, orquestra_participante) VALUES 
 ('Integrante A', 1, 'Nacionalidade A', '1990-01-01', 1),
 ('Integrante B', 2, 'Nacionalidade B', '1991-02-02', 2),
@@ -78,11 +73,11 @@ INSERT INTO `mydb`.`Integrante` (nome, identidade, nacionalidade, data_de_nascim
 ('Integrante R', 18, 'Nacionalidade R', '2007-06-18', 18),
 ('Integrante S', 19, 'Nacionalidade S', '2008-07-19', 19),
 ('Integrante T', 20, 'Nacionalidade T', '2009-08-20', 20);
-```
 
-#### 4. Inserindo dados na tabela `Instrumento`
 
-```sql
+`Instrumento`
+
+
 INSERT INTO `mydb`.`Instrumento` (numero_de_serie, marca, nome) VALUES 
 (1, 'Marca A', 'Instrumento A'),
 (2, 'Marca B', 'Instrumento B'),
@@ -104,16 +99,13 @@ INSERT INTO `mydb`.`Instrumento` (numero_de_serie, marca, nome) VALUES
 (18, 'Marca R', 'Instrumento R'),
 (19, 'Marca S', 'Instrumento S'),
 (20, 'Marca T', 'Instrumento T');
-```
 
-#### 5. Inserindo dados na tabela `Atuação na orquestra`
+`Atuação na orquestra`
 
-```sql
+
 INSERT INTO `mydb`.`Atuação na orquestra` (id_atuacao, função, sinfonia, data_de_execução, instrumento, Integrante_id_Integrante) VALUES 
 (1, 'Solista', 'Sinfonia nº 1', '2024-01-01', 1, 1),
-(2, 'Solo', 'Sin
-
-fonia nº 2', '2024-02-02', 2, 2),
+(2, 'Solo', 'Sinfonia nº 2', '2024-02-02', 2, 2),
 (3, 'Orquestração', 'Sinfonia nº 3', '2024-03-03', 3, 3),
 (4, 'Direção', 'Sinfonia nº 4', '2024-04-04', 4, 4),
 (5, 'Interpretação', 'Sinfonia nº 5', '2024-05-05', 5, 5),
@@ -132,11 +124,6 @@ fonia nº 2', '2024-02-02', 2, 2),
 (18, 'Apresentação Especial', 'Sinfonia nº 18', '2025-06-18', 18, 18),
 (19, 'Cerimônia', 'Sinfonia nº 19', '2025-07-19', 19, 19),
 (20, 'Grande Evento', 'Sinfonia nº 20', '2025-08-20', 20, 20);
-```
 
-### Observações
-- Você pode executar esses comandos SQL em sua ferramenta de gerenciamento de banco de dados, como o MySQL Workbench.
-- As datas e os dados de exemplo são fictícios e podem ser ajustados conforme necessário.
-- As referências entre as tabelas (como `sinfonia_apresenta`, `orquestra_participante`, etc.) foram mantidas de acordo com as tabelas criadas anteriormente. 
 
-Se você encontrar algum erro ou precisar de ajustes adicionais, é só avisar!
+
